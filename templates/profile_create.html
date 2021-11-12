@@ -1,0 +1,20 @@
+<body style="background-color:rgb(172, 205, 207);">
+<form action="{{ url_for ('createdb') }}" method="POST">
+    <button name="createdb" type="submit">Create Database</button>
+</form>
+<form action="{{ url_for ('artist_create') }}" method="POST" enctype="multipart/form-data">
+    <h3>Hey beautiful artist! </h3>
+    <h4>Let's create a new profile for you! Enter your details below</h4>
+    Name <br><input type="text" name="name" /></br>
+
+    Email <br><input type="text" name="email" /></br>
+
+    About <br><input type="text" name="about" /></br>
+
+    Date <br><input type="text" name="createdate" /></br>
+
+    Profile_Picture<br><input type="file" name="File" /><br>
+
+    <input type="submit" value="submit" /><br>
+</form>
+</body>

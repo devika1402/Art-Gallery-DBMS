@@ -1,0 +1,25 @@
+<body style="background-color:rgb(172, 205, 207);">
+<form action="#" method="POST" enctype="multipart/form-data">
+    <h3>Profile Details</h3>
+    Name<br>
+    <input type="text" name="name" value="{{show_data.0.1}}" /></br>
+
+    Email<br>
+    <input type="text" name="email" value="{{show_data.0.2}}" /></br>
+
+    About<br>
+    <input type="text" name="about" value="{{show_data.0.3}}" /></br>
+
+    Current date<br>
+    <input type="text" name="createdate" value="{{show_data.0.4}}" /></br>
+
+    Current image
+    <input type="hidden" name="image_file" value="{{show_data.0.5}}">
+    <img src="{{show_data.0.5}}" name="image" alt="cover image" width="320" height="240">
+
+    <br>
+    <input type="file" name="file" /><br>
+
+    <input type="submit" value="submit" /><br>
+</form>
+</body>

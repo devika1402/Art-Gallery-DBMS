@@ -1,0 +1,33 @@
+<a href="{{ url_for ('artist_create') }}">Create a new profile</a>
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    img {
+      border-radius: 50%;
+    }
+</style>
+<body style="background-color:rgb(196, 224, 226);">
+    <center><font face = "Brush Script" size = "7">Meet The Artists</font><br><br>
+    {% for item in profile %}
+    <br>
+    <div class="row">
+    <div class="column">
+        <div class="card">
+        <img src="{{item.5}}" alt="Profile picture" style="width:200px">
+        <div class="container">
+            <h2>{{item.1}}</h2>
+            <p class="title"><b>About Me: </b>{{item.3}}</p>
+            <p><b>Email: </b>{{item.2}}</p>
+            <p><b>Date created: </b>{{item.4}}</p>
+            <a href="{{ url_for ('profileupdate', id=item.0) }}">Update profile</a>
+            <a href="{{ url_for ('sendlove', id=item.0) }}">Send love</a>
+            <a href="{{ url_for ('profiledelete', id=item.0) }}">Delete profile</a>
+        </div>
+        </div>
+    </div>
+    </div>
+    {% endfor %}
+    </center>
+</body>
+</html>
