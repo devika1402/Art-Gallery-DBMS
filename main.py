@@ -6,6 +6,7 @@ UPLOAD_FOLDER = '/static/profiles'
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
 
 #----------------First home page----------------
+# FIRST EDIT
 @app.route('/')
 def greeting():
    return "Artist table - Get ready for some mindblowing koding"
