@@ -11,7 +11,7 @@ def greeting():
    return "Artist table - Get ready for some mindblowing koding"
 
 #----------------Creating the DB---------------- 
-
+#Second edit
 @app.route("/createdb", methods=['POST'])
 def createdb():
   
